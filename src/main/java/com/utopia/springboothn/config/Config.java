@@ -1,5 +1,6 @@
 package com.utopia.springboothn.config;
 
+import com.utopia.springboothn.core.RedisLock;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -9,4 +10,8 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class Config {
+    @Bean(value = "redisLock")
+    public RedisLock getRedisLockBean(){
+        return new RedisLock();
+    }
 }

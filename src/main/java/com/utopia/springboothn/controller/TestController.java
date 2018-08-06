@@ -15,9 +15,4 @@ public class TestController extends BaseController{
     public BaseJson test(){
         return  new BaseJson();
     }
-    ///
-    public void test121(){
-        System.out.println();
-    }
-
 }

@@ -16,9 +16,9 @@ public class BaseJson {
     private String code = "0000";
 
     /**
-     * 有错为错误信息，没错为成功提示信息
+     * 默认成功提示信息suc
      */
-    private String message;
+    private String message = "suc";
 
     public BaseJson() {
     }

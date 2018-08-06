@@ -13,12 +13,18 @@ import java.io.Serializable;
 @Document(collection = "first")
 public class First implements Serializable {
 
+    /**
+     * 将MongoDB的"_id" 对应 实体中的uid字段
+     */
     @Field("_id")
     private String uid;
     private String title;
     private String description;
     private String by;
     private int likes;
+    /**
+     *这个属性不是数据库字段，不用映射数据库
+     */
     @Transient
     private String memo;
 
